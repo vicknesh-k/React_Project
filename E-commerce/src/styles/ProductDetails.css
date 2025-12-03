@@ -1,0 +1,118 @@
+/* ===========================
+   PRODUCT DETAILS PAGE
+   =========================== */
+
+.details-page {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.detail-image {
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #fafafa;
+  padding: 20px;
+}
+
+.detail-info {
+  flex: 1;
+}
+
+.detail-info h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.detail-info h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 12px;
+}
+
+.detail-info p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.detail-info .btn {
+  margin-top: 20px;
+  background: #1e88e5;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+
+.detail-info .btn:hover {
+  background: #1565c0;
+}
+
+.detail-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.buy-btn {
+  background: #e63946;
+}
+
+.buy-btn:hover {
+  background: #c62f3b;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 900px) {
+  .details-page {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .detail-image {
+    width: 260px;
+    height: 260px;
+  }
+
+  .detail-info h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .detail-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .detail-info h2 {
+    font-size: 18px;
+  }
+
+  .detail-info h3 {
+    font-size: 18px;
+  }
+
+  .detail-info p {
+    font-size: 14px;
+  }
+}
